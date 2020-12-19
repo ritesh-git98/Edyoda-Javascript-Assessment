@@ -1,3 +1,9 @@
+(function() {
+    let status = localStorage.getItem("login");
+    if (status == null || status === undefined || status === "false") {
+        location.assign("./index.html");
+    }
+})();
 let dataLength = 0;
 // fetching the data
 $.get('https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products', (data) => {
@@ -34,7 +40,7 @@ $(document).ready(function() {
     //logout functionality
     $('#logout-btn').click(() => {
         localStorage.removeItem("login");
-        location.assign("./login.html");
+        location.assign("./index.html");
     });
     // expired checkbox handling
     $("input[name= product-expired]").change(() => {

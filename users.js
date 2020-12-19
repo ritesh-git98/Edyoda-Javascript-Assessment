@@ -1,3 +1,9 @@
+(function() {
+    let status = localStorage.getItem("login");
+    if (status == null || status === undefined || status === "false") {
+        location.assign("./index.html");
+    }
+})();
 //fetching the data
 $.get('https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users', data => {
     renderTableData(data)
@@ -25,7 +31,7 @@ $(document).ready(function() {
     //logout functionality
     $('#logout-btn').click(() => {
         localStorage.removeItem("login");
-        location.assign("./login.html");
+        location.assign("./index.html");
     });
     // search functionality
     $('#search-wrapper').submit((e) => {
