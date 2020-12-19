@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./base.css" rel="stylesheet" />
+    <link href="./product.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <title>Products Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="logo-wrapper">
+                <img src="./assests/logo.png" alt="Logo">
+                <p id="logo-text">Kafene</p>
+            </div>
+            <a class="menu-item " href="./orders.html">Orders</a>
+            <a class="menu-item active" href="./product.html">Products</a>
+            <a class="menu-item " href="./users.html">Users</a>
+            <div id="logout-btn-wrapper">
+                <a class="menu-item" href="#" id="logout-btn">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="wrapper">
+            <h1 id="main-heading">Products</h1>
+            <div id="data-wrapper">
+                <div id="filter-wrapper">
+                    <h3>Filters</h3>
+                    <div id="filter-options">
+
+                    </div>
+                </div>
+                <div id="table-wrapper">
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Product Brand</th>
+                                <th>Expiry Date</th>
+                                <th>Unit Price</th>
+                                <th>Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="./products.js"></script>
+
+</body>
+
+</html>

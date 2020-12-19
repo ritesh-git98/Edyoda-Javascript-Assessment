@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./base.css" rel="stylesheet" />
+    <link href="./login.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <title>Login Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="logo-wrapper">
+                <img src="./assests/logo.png" alt="Logo">
+                <p id="logo-text">Kafene</p>
+            </div>
+            <a class="menu-item" href="./orders.html">Orders</a>
+            <a class="menu-item" href="./products">Products</a>
+            <a class="menu-item " href="./users">Users</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <form id="login-form" name="loginForm">
+                <h1>Sign In</h1>
+                <input class="login-input" id="username" type=" text " name="username " placeholder="Enter Username ">
+                <input class="login-input" id="password" type="password" name="password" placeholder="Enter Password">
+                <input id="login-btn" type="submit" value="Login">
+            </form>
+        </div>
+    </main>
+    <script src="./login.js"></script>
+</body>
+
+</html>
